@@ -1,4 +1,4 @@
-import { Text } from "@/components/Text";
+import { MediaText } from "@/components/MediaText";
 
 const pageText = { main: "اللَّهُمَّ صَلِّ صَلَاةً كَامِلَةً وسَلِّمْ سَلَامًا تَامًّا عَلَى سَيِّدنَا مُحَمَّدٍ الَّذِي تَنْحَلُّ بِهِ الْعُقَدُ وَتَنْفَرِجُ بِهِ الْكُرَبُ وَتُقْضَى بِهِ الْحَوائِجُ وتُنَالُ بِهِ الرَّغَائِبُ وَحُسْنُ الْخَوَاتِيمُ وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيمُ وَعَلَى آلِهِ وَصَحْبِهِ فِي كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُومٍ لَكَ (يَا حَيُّ يَا قَيُّوم).", trans: "Allahumma salli salatan kamilatan wa sallim salaman tamman ‘ala sayyidina muhammadin alladhi tanhallu bihi al-’uqad wa tanfariju bihi al-kurab wa tuqda bihi al-hawa’ij wa tanalu bihi ar-ragha’ib wa husnu al-khawatim, wa ustasqa al-ghamamu bi wajhihi al-karim wa ‘ala alihi wa sahbihi fi kulli lamhatin wa nafasin bi ‘adadi kulli ma’lumin laka (ya hayyu ya qayyum)" };
 
@@ -12,7 +12,7 @@ export default async function Page() {
             <div className="text-white text-xl text-center pb-[15px]">
               As-Salah an-Nariyyah: The Fiery Prayer
             </div>
-            <Text
+            <MediaText audioSrc="nariyya.mp3"
               text={pageText}
               totalPages={1}
               path={"/"}
